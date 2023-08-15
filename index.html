@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="./css/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header class="header">
@@ -21,17 +22,24 @@
           <a class="logo link" href="./index.html">
             Web<span class="logo-span">Studio</span></a
           >
-          <ul class="list">
-            <li class="list-items">
-              <a class="nav-list current link" href="./index.html">Studio</a>
-            </li>
-            <li class="list-items">
-              <a class="nav-list link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="list-items">
-              <a class="nav-list link" href="">Contacts</a>
-            </li>
-          </ul>
+          <button class="nav-btn" type="button" data-menu-open>
+            <svg class="nav-btn-icon" width="32" height="22">
+              <use href="./images/icons.svg#hamburger"></use>
+            </svg>
+          </button>
+          <div class="nav-container">
+            <ul class="list">
+              <li class="list-items">
+                <a class="nav-list current link" href="./index.html">Studio</a>
+              </li>
+              <li class="list-items">
+                <a class="nav-list link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="list-items">
+                <a class="nav-list link" href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
         </nav>
 
         <address class="adress">
@@ -51,7 +59,7 @@
       </div>
     </header>
 
-    <main>
+    <!-- <main>
       <section class="section-solution">
         <div class="container">
           <h1 class="section-solution-title">
@@ -149,7 +157,7 @@
               <div class="card-desc">
                 <h3 class="list-title">Mark Guerrero</h3>
                 <p class="list-desc">Product Designer</p>
-                <!-- <div class="social-network-icon"> -->
+                
                 <ul class="social-network-list list">
                   <li class="social-network-item">
                     <a href="" class="social-network-link">
@@ -180,7 +188,7 @@
                     </a>
                   </li>
                 </ul>
-                <!-- </div> -->
+                
               </div>
             </li>
             <li class="team-sectin-list">
@@ -188,7 +196,7 @@
               <div class="card-desc">
                 <h3 class="list-title">Tom Ford</h3>
                 <p class="list-desc">Frontend Developer</p>
-                <!-- <div class="social-network-icon"> -->
+               
                 <ul class="social-network-list list">
                   <li class="social-network-item">
                     <a href="" class="social-network-link">
@@ -219,7 +227,7 @@
                     </a>
                   </li>
                 </ul>
-                <!-- </div> -->
+               
               </div>
             </li>
             <li class="team-sectin-list">
@@ -227,7 +235,7 @@
               <div class="card-desc">
                 <h3 class="list-title">Camila Garcia</h3>
                 <p class="list-desc">Marketing</p>
-                <!-- <div class="social-network-icon"> -->
+                
                 <ul class="social-network-list list">
                   <li class="social-network-item">
                     <a href="" class="social-network-link">
@@ -258,7 +266,7 @@
                     </a>
                   </li>
                 </ul>
-                <!-- </div> -->
+                
               </div>
             </li>
             <li class="team-sectin-list">
@@ -266,7 +274,7 @@
               <div class="card-desc">
                 <h3 class="list-title">Daniel Wilson</h3>
                 <p class="list-desc">UI Designer</p>
-                <!-- <div class="social-network-icon"> -->
+               
                 <ul class="social-network-list list">
                   <li class="social-network-item">
                     <a href="" class="social-network-link">
@@ -297,7 +305,7 @@
                     </a>
                   </li>
                 </ul>
-                <!-- </div> -->
+                
               </div>
             </li>
           </ul>
@@ -352,9 +360,9 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo">
           <a class="logo link" href="./index.html">
@@ -418,7 +426,77 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+
+    <div class="is-hidden" data-menu>
+      <div class="menu">
+        <button type="button" class="close-btn-menu" data-menu-close>
+          <svg class="close-btn-icon" height="8" width="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="menu-list list">
+          <li class="menu-items">
+            <a href="./index.html" class="menu-link menu-current link"
+              >Studio</a
+            >
+          </li>
+          <li class="menu-items">
+            <a href="./portfolio.html" class="menu-link link">Portfolio</a>
+          </li>
+          <li class="menu-items">
+            <a href="#" class="menu-link link">Contacts</a>
+          </li>
+        </ul>
+        <address class="adress-menu">
+          <ul class="list adress-list-menu">
+            <li class="list-items">
+              <a class="adress-list-link phone link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="list-items">
+              <a
+                class="adress-list-link email link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="social-network-list-menu list">
+          <li class="social-network-item">
+            <a href="" class="social-network-link">
+              <svg class="social-network" width="16" height="16">
+                <use href="./images/icons.svg#icon-ico-inst"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-network-item">
+            <a href="" class="social-network-link">
+              <svg class="social-network" width="16" height="16">
+                <use href="./images/icons.svg#icon-ico-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-network-item">
+            <a href="" class="social-network-link">
+              <svg class="social-network" width="16" height="16">
+                <use href="./images/icons.svg#icon-ico-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-network-item">
+            <a href="" class="social-network-link">
+              <svg class="social-network" width="16" height="16">
+                <use href="./images/icons.svg#icon-ico-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
@@ -484,10 +562,10 @@
             >
             </textarea>
           </div>
-          <div class="modal-checkbox-container ">
+          <div class="modal-checkbox-container">
             <input
               type="checkbox"
-              class="modal-checkbox-item visually-hidden "
+              class="modal-checkbox-item visually-hidden"
               id="user-privacy"
               value="true"
               name="user-privacy"
@@ -495,18 +573,18 @@
             <label for="user-privacy" class="modal-checkbox-privacy">
               <span class="checkbox-icon-item">
                 <svg class="checkbox-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-icon" ></use>
+                  <use href="./images/icons.svg#icon-icon"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the <a href="" class="privacy-policy">Privacy Policy</a>
+              I accept the terms and conditions of the
+              <a href="" class="privacy-policy">Privacy Policy</a>
             </label>
-            
           </div>
-          <button class="modal-btn" type="button" >Send</button>
+          <button class="modal-btn" type="button">Send</button>
         </form>
-        
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

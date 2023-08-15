@@ -1,0 +1,45 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 768px;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .nav-container {
+    display: flex;
+  }
+
+  .adress {
+    display: block;
+  }
+
+  .adress .list {
+    display: block;
+    
+  }
+.header-container {
+    display: flex;
+}
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 100%;
+    width: 1158px;
+  }
+
+  .adress {
+    display: flex;
+  }
+  .adress .list {
+    display: flex;
+}
+
+}
