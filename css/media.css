@@ -1,4 +1,28 @@
+@media screen and (max-width: 320px) {
+  .footer-form-item {
+    width: 298px;
+  }
+  .modal {
+    width: 320px;
+  }
+  .close-btn {
+    top: 30px;
+  }
+  .social-network-list-menu {
+    gap: 0;
+    justify-content: space-between;
+  }
+  .phone {
+    font-size: 28px;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  /* modal */
+  .modal {
+    width: 408px;
+  }
+
   /* header + menu */
   .container {
     width: 100%;
@@ -176,9 +200,17 @@
 
   .adress {
     display: flex;
+    padding: 24px 0;
   }
   .adress .list {
     display: flex;
+  }
+
+  .adress-list {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 
   /* section-solution */
@@ -304,13 +336,8 @@
     align-items: baseline;
   }
 
-/* portfolio */
+  /* portfolio */
 
-.container {
-  
+  .container {
+  }
 }
-
-
-}
-
-
